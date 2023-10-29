@@ -58,8 +58,8 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
 			mode: 'payment',
 			// success_url: `${process.env.CLIENT_BASE_URL}/payments/success`,
 			// cancel_url: `${process.env.CLIENT_BASE_URL}/payments/failed`,
-			success_url: "http://localhost:3000/#/payments/success" , 
-			cancel_url: "http://localhost:3000/#/payments/failed"
+			success_url: "https://marketplace-mw28.onrender.com/#/payments/success" , 
+			cancel_url: "https://marketplace-mw28.onrender.com/#/payments/failed"
 		  });
 
 		  await strapi.entityService.create('api::order.order', {
