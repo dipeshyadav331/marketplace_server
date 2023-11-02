@@ -55,9 +55,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
 				allowed_countries: ['IN']
 			},
 			line_items: lineItems,
-			mode: 'payment',
-			// success_url: `${process.env.CLIENT_BASE_URL}/payments/success`,
-			// cancel_url: `${process.env.CLIENT_BASE_URL}/payments/failed`,
+			mode: 'payment', 
 			success_url: "https://marketplace-mw28.onrender.com/#/payments/success" , 
 			cancel_url: "https://marketplace-mw28.onrender.com/#/payments/failed"
 		  });
